@@ -1,0 +1,119 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1rem;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    width: 100%;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+h1 {
+    margin: 0;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces';
+    text-align: start;
+    font-size: 31px;
+    font-weight: 700;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    padding: 10px 0;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.img-preview {
+    background-image: url(images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 15rem;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.72rem;
+    background-color: white;
+    padding: 25px 1rem;
+}
+
+.perfume {
+    color: hsl(228, 12%, 48%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.pricing-info {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discount {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+    font-size: 31px;
+}
+
+.fullprice {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.btn {
+    background-color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat';
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 15px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: hsl(158, 36%, 27%);
+    cursor: pointer;
+}
+
+/* Media-Queries STARTS HERE */
+
+@media(min-width: 700px) {
+    main {
+        max-width: 700px;
+        display: flex;
+    }
+
+    .img-preview {
+        display: flex;
+        height: auto;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
